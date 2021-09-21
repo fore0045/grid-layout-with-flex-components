@@ -47,10 +47,8 @@ body {
     flex-direction: column;
 }
 
-.emoji div:nth-child(1) {
-    order: ;
-}
-
-.emoji div:nth-child(4) {
-    justify-content: flex-end;
+.emoji,
+.icon {
+    align-self: center;
+    order: -1;
 }
