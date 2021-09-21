@@ -25,3 +25,32 @@ body {
 .icon {
     font-size: 4rem;
 }
+
+/* Adding Grid to the cards */
+
+.emojis {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+        "one two"
+        "three four";
+    gap: 1em;
+}
+
+/* Adding Flex to to layout the content of the emoji cards */
+
+.emoji {
+    display: flex;
+    flex-direction: column;
+}
+
+.emoji div:nth-child(1) {
+    order: ;
+}
+
+.emoji div:nth-child(4) {
+    justify-content: flex-end;
+}
