@@ -30,9 +30,8 @@ body {
 
 .emojis {
     max-width: 1200px;
-    margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
     grid-template-areas:
         "one two"
@@ -40,7 +39,7 @@ body {
     gap: 1em;
 }
 
-/* Adding Flex to to layout the content of the emoji cards */
+/* Adding Flex to layout the content of the emoji cards */
 
 .emoji {
     display: flex;
@@ -51,4 +50,8 @@ body {
 .icon {
     align-self: center;
     order: -1;
+}
+
+.emoji p {
+    min-height: 110px;
 }
